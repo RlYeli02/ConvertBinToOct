@@ -11,6 +11,10 @@ class TestBinToOct(unittest.TestCase):
         result = convert.BinToOct("0110011")
         self.assertEqual(result, "063")
 
+    def test_convert_to_binary_without_decimal(self):
+        result = convert.BinToOct("0011101")
+        self.assertEqual(result, "035")
+
 
 if __name__ == '__main__':
     unittest.main()
